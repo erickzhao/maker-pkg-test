@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Writing preinstall-test to ~/Downloads"
+touch ~/Downloads/preinstall-test
+exit 0

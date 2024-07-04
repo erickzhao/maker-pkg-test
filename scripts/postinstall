@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Writing postinstall-test to ~/Downloads"
+touch ~/Downloads/postinstall-test
+exit 0

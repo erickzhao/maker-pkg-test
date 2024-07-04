@@ -1,5 +1,6 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+const path = require('path');
 
 module.exports = {
   packagerConfig: {
@@ -12,7 +13,10 @@ module.exports = {
       config: {},
     },
     {
-      name: '@electron-forge/maker-zip',
+      name: '@electron-forge/maker-pkg',
+      config: {
+        scripts: path.resolve(__dirname, './scripts'),
+      },
       platforms: ['darwin'],
     },
     {
